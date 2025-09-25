@@ -15,8 +15,7 @@ public class EncomendaTrackerController {
     }
 
     @PostMapping(path = "/encomenda")
-    public EncomendasEntities<Void> cadastraEncomenda() {
-        return null;
+    public void cadastraEncomenda() {
     }
 
     @GetMapping(path = "/encomenda/{codigo}")

@@ -1,4 +1,7 @@
 package com.encomendaTracker.encomenda_tracker_api.entities;
 
-public class EncomendasEntities<V> {
+import jakarta.persistence.Entity;
+
+@Entity
+public class EncomendasEntities {
 }
