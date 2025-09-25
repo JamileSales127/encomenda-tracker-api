@@ -1,6 +1,5 @@
 package com.encomendaTracker.encomenda_tracker_api.controller;
 
-import com.encomendaTracker.encomenda_tracker_api.entities.EncomendasEntities;
 import com.encomendaTracker.encomenda_tracker_api.service.EncomendaTrackerService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,8 +14,7 @@ public class EncomendaTrackerController {
     }
 
     @PostMapping(path = "/encomenda")
-    public EncomendasEntities<Void> cadastraEncomenda() {
-        return null;
+    public void cadastraEncomenda() {
     }
 
     @GetMapping(path = "/encomenda/{codigo}")
