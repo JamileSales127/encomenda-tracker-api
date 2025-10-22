@@ -5,8 +5,8 @@ import com.encomendaTracker.encomenda_tracker_api.enums.StatusEncomenda;
 import java.time.LocalDateTime;
 
 public class EncomendaVO {
-    private int id;
-    private Long codigoRastreio;
+    private Long id;
+    private String codigoRastreio;
     private StatusEncomenda status;
     private LocalDateTime dateUpdate;
     private String descricao;
@@ -16,7 +16,7 @@ public class EncomendaVO {
 
     }
 
-    public EncomendaVO(int id, StatusEncomenda status, Long codigoRastreio, LocalDateTime dateUpdate,  String descricao, String ultimoLocal) {
+    public EncomendaVO(Long id, StatusEncomenda status, String codigoRastreio, LocalDateTime dateUpdate,  String descricao, String ultimoLocal) {
         this.id = id;
         this.status = status;
         this.codigoRastreio = codigoRastreio;
@@ -41,19 +41,19 @@ public class EncomendaVO {
         this.ultimoLocal = ultimoLocal;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getCodigoRastreio() {
+    public String getCodigoRastreio() {
         return codigoRastreio;
     }
 
-    public void setCodigoRastreio(Long codigoRastreio) {
+    public void setCodigoRastreio(String codigoRastreio) {
         this.codigoRastreio = codigoRastreio;
     }
 
