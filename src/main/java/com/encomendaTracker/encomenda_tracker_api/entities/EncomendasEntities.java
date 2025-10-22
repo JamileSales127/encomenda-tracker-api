@@ -2,7 +2,8 @@ package com.encomendaTracker.encomenda_tracker_api.entities;
 
 import com.encomendaTracker.encomenda_tracker_api.enums.StatusEncomenda;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+
 
 import java.time.LocalDateTime;
 
@@ -13,7 +14,7 @@ public class EncomendasEntities {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotNull
+    @NotBlank
     private String codigoRastreio;
 
     private String descricao;
