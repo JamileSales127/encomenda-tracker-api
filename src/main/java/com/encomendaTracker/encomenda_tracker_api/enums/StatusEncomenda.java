@@ -14,10 +14,10 @@ public enum StatusEncomenda {
     public String getStatus() {
         return status;
     }
-    public static String findByStatus(String status){
+    public static StatusEncomenda findByStatus(String status){
         for (StatusEncomenda statusInitial : StatusEncomenda.values()){
             if (statusInitial.getStatus().equals(status)){
-                return status;
+                return statusInitial;
             }
         }
         return null;
