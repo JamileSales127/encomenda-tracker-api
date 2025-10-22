@@ -1,15 +1,16 @@
 package com.encomendaTracker.encomenda_tracker_api.entities;
 
 import com.encomendaTracker.encomenda_tracker_api.enums.StatusEncomenda;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "encomendas")
 public class EncomendasEntities {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotNull
@@ -19,6 +20,7 @@ public class EncomendasEntities {
 
     private String ultimoLocal;
 
+    @Enumerated(EnumType.STRING)
     private StatusEncomenda status;
 
     private LocalDateTime dataDeAtualizacao;
