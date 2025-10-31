@@ -19,6 +19,7 @@ public class EncomendaTrackerController {
 
     @GetMapping(path = "/encomenda/{codigo}")
     public void buscaEncomenda(String codigo) {
+        encomendaTrackerService.buscarEncomenda(codigo);
     }
 
     @PutMapping(path = "/encomenda/{codigo}")
