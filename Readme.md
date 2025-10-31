@@ -40,11 +40,8 @@ Este projeto foi desenvolvido com o propósito de:
 
 ## 🛠️ Tecnologias utilizadas
 
-- Java + Spring Boot
-- Feign Client
-- GitHub Pages / Vercel
-- HTML + CSS + JS (front-end)
-- Banco de dados local (simulado)
+- Java 21 + Spring Boot
+- Banco de dados Postgres
 
 ---
 
