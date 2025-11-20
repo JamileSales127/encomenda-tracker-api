@@ -29,8 +29,4 @@ public class EncomendaTrackerController {
         encomendaTrackerService.buscarEncomenda(codigo);
     }
 
-    @PutMapping(path = "/encomenda/{codigo}")
-    public void atualizaStatusEncomenda(String codigo) {
-    }
-
 }
