@@ -3,10 +3,12 @@ package com.encomendaTracker.encomenda_tracker_api.entities;
 import com.encomendaTracker.encomenda_tracker_api.enums.StatusEncomenda;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Setter;
 
 
 import java.time.LocalDateTime;
 
+@Setter
 @Entity
 @Table(name = "encomendas")
 public class EncomendasEntities {

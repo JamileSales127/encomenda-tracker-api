@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface EncomendasJpaRepository extends JpaRepository<EncomendasEntities, Long> {
+    EncomendasEntities findByCodigoRastreio(String codigoRastreio);
 }
